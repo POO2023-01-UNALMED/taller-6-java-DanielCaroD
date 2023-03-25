@@ -6,13 +6,13 @@ public class Automovil extends Vehiculo {
 	int velocidadMaxima = 100;
 	String traccion = "FWD";
 	
-	public Automovil (String placa, String nombre, int precio, int peso, String traccion, Fabricante fabricante)  {
+	public Automovil (String placa, String nombre, int precio, int peso, Fabricante fabricante, int puestos)  {
 		this.placa = placa;
 		this.nombre = nombre;
 		this.precio = precio;
 		this.peso = peso;
-		this.traccion = traccion;
 		this.fabricante = fabricante;
+		this.puestos = puestos;
 		CantidadVehiculos ++;
 		Cautomoviles ++;
 	}

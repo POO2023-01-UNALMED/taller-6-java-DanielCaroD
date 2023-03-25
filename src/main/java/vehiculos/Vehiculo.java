@@ -77,4 +77,12 @@ public class Vehiculo {
 	public Fabricante fabricaMayorVentas() {
 		return this.fabricante;
 	}
+	
+	public static void setCantidadVehiculos(int cantidad) {
+		CantidadVehiculos = cantidad;
+	}
+	
+	public static int getCantidadVehiculos() {
+		return CantidadVehiculos;
+	}
 }

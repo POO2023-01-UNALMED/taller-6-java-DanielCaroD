@@ -6,12 +6,13 @@ public class Camion extends Vehiculo  {
 	int velocidadMaxima = 80;
 	String traccion = "4X2";
 	
-	public Camion (String placa, String nombre, int precio, int peso, Fabricante fabricante)  {
+	public Camion (String placa, String nombre, int precio, int peso, Fabricante fabricante, int ejes)  {
 		this.placa = placa;
 		this.nombre = nombre;
 		this.precio = precio;
 		this.peso = peso;
 		this.fabricante = fabricante;
+		this.ejes = ejes;
 		CantidadVehiculos ++;
 		Ccamiones ++;
 	}
