@@ -17,4 +17,9 @@ public class Fabricante {
 	public Pais getPais() {
 		return pais;
 	}
+	
+	public Pais paisMasVendedor() {
+		return this.pais;
+	}
+	
 }

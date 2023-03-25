@@ -73,4 +73,8 @@ public class Vehiculo {
 	public void vehiculosPorTipo () {
 		System.out.println("Automoviles: " + Cautomoviles + "\nCamionetas; " + Ccamionetas + "\nCamiones: " + Ccamiones);
 	}
+	
+	public Fabricante fabricaMayorVentas() {
+		return this.fabricante;
+	}
 }
