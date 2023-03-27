@@ -14,6 +14,17 @@ public class Vehiculo {
 	static int Ccamionetas;
 	static int Ccamiones;
 	
+	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante) {
+		this.placa = placa;
+		this.puertas = puertas;
+		this.velocidadMaxima = velocidadMaxima;
+		this.nombre = nombre;
+		this.precio = precio;
+		this.traccion = traccion;
+		this.fabricante = fabricante;
+		CantidadVehiculos ++;
+	}
+	
 	public void setPlaca(String placa) {
 		this.placa = placa;
 	}
