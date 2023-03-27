@@ -2,12 +2,10 @@ package vehiculos;
 
 public class Camion extends Vehiculo  {
 	private int ejes;
-	int puertas = 2;
-	int velocidadMaxima = 80;
-	String traccion = "4X2";
 	
-	public Camion(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante) {
-		super(placa, puertas, velocidadMaxima, nombre, precio, peso, traccion, fabricante);
+	public Camion(String placa, String nombre, int precio, int peso, Fabricante fabricante, int ejes) {
+		super(placa, 2, 80, nombre, precio, peso, "4X2", fabricante);
+		this.ejes = ejes;
 		CantidadVehiculos ++;
 		Ccamiones ++;
 	}
