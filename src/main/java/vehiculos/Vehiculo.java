@@ -31,7 +31,7 @@ public class Vehiculo {
 	public void setVelocidadMaxima(int velocidadMaxima) {
 		this.velocidadMaxima = velocidadMaxima;
 	}
-	public int VelocidadMaxima() {
+	public int getVelocidadMaxima() {
 		return velocidadMaxima;
 	}
 	
