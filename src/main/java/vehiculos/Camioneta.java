@@ -5,14 +5,9 @@ public class Camioneta extends Vehiculo  {
 	int velocidadMaxima = 90;
 	String traccion = "4X4";
 	
-	public Camioneta (String placa, int puertas, String nombre, int precio, int peso, Fabricante fabricante ,boolean volco)  {
-		this.placa = placa;
-		this.puertas = puertas;
-		this.nombre = nombre;
-		this.precio = precio;
-		this.peso = peso;
-		this.fabricante = fabricante;
-		this.volco = volco;
+	public Camioneta(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso,
+			String traccion, Fabricante fabricante) {
+		super(placa, puertas, velocidadMaxima, nombre, precio, peso, traccion, fabricante);
 		CantidadVehiculos ++;
 		Ccamionetas ++;
 	}
