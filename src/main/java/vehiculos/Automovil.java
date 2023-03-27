@@ -6,15 +6,11 @@ public class Automovil extends Vehiculo {
 	int velocidadMaxima = 100;
 	String traccion = "FWD";
 	
-	public Automovil (String placa, String nombre, int precio, int peso, Fabricante fabricante, int puestos)  {
-		this.placa = placa;
-		this.nombre = nombre;
-		this.precio = precio;
-		this.peso = peso;
-		this.fabricante = fabricante;
-		this.puestos = puestos;
+	public Automovil(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante) {
+		super(placa, puertas, velocidadMaxima, nombre, precio, peso, traccion, fabricante);
 		CantidadVehiculos ++;
 		Cautomoviles ++;
+
 	}
 	
 	public void setPuestos(int puestos) {
