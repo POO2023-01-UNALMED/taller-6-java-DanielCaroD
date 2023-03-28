@@ -3,10 +3,17 @@ package vehiculos;
 public class Fabricante {
 	private String nombre;
 	private Pais pais;
+	static Pais[] tPaises;
+	static int Long = 0;
+	static Pais pMas;
+	
 	
 	public Fabricante (String nombre, Pais pais) {
 		this.nombre = nombre;
 		this.pais = pais;
+		this.pais.cont ++;
+		tPaises[Long] = pais;
+		Long ++;
 	}
 	
 	public void setNombre(String nombre) {
@@ -24,7 +31,14 @@ public class Fabricante {
 	}
 	
 	public Pais paisMasVendedor() {
-		return this.pais;
+		for (int i = 0; i < Long; i++) {
+			if(i == 0) {
+				pMas = tPaises[i];
+			}
+			else if (tPaises[i].cont > pMas.cont) {
+				pMas = tPaises[i];
+			}
+		}
+		return pMas;
 	}
-	
 }
