@@ -13,7 +13,7 @@ public class Vehiculo {
 	static int Cautomoviles;
 	static int Ccamionetas;
 	static int Ccamiones;
-	public static Fabricante[] tFabricantes;
+	public static Fabricante[] tFabricantes = new Fabricante[Fabricante.arr];
 	public static int FLong = 0;
 	
 	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante) {

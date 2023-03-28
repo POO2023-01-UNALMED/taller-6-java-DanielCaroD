@@ -1,10 +1,11 @@
 package vehiculos;
 
 public class Fabricante {
+	final static int arr = 100;
 	public int num = 0;
 	private String nombre;
 	private Pais pais;
-	public static Pais[] tPaises;
+	public static Pais[] tPaises = new Pais[arr];
 	public static int Long = 0;
 	private static Fabricante fMas;
 	
@@ -43,3 +44,4 @@ public class Fabricante {
 		return fMas;
 	}
 }
+
