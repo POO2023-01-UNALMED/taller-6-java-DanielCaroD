@@ -13,6 +13,8 @@ public class Vehiculo {
 	static int Cautomoviles;
 	static int Ccamionetas;
 	static int Ccamiones;
+	public static Fabricante[] tFabricantes;
+	public static int FLong = 0;
 	
 	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante) {
 		this.placa = placa;
@@ -23,6 +25,9 @@ public class Vehiculo {
 		this.traccion = traccion;
 		this.fabricante = fabricante;
 		CantidadVehiculos ++;
+		this.fabricante.num ++;
+		tFabricantes[FLong] = fabricante;
+		FLong ++;
 	}
 	
 	public void setPlaca(String placa) {
@@ -83,10 +88,6 @@ public class Vehiculo {
 	
 	public void vehiculosPorTipo () {
 		System.out.println("Automoviles: " + Cautomoviles + "\nCamionetas; " + Ccamionetas + "\nCamiones: " + Ccamiones);
-	}
-	
-	public Fabricante fabricaMayorVentas() {
-		return this.fabricante;
 	}
 	
 	public static void setCantidadVehiculos(int cantidad) {
